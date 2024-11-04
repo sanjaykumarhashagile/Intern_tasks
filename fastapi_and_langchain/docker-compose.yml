@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  pdf_processor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /home/sanjay_kumar/Desktop/example:/app  
+    ports:
+      - "8001:8001" 
